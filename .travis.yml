@@ -1,13 +1,10 @@
 language: python
 python:
 - "3.8"
-before_install:
-  - python --version
-  - pip install -U pip
 deploy:
   provider: pypi
   username: "__token__"
   skip_existing: true
   edge: true
   on:
-    branch: main
+    branch: master
