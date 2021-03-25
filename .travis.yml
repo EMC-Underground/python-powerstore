@@ -1,0 +1,15 @@
+language: python
+python:
+- "3.8"
+before_install:
+  - python --version
+  - pip install -U pip
+install:
+  - pip install -r requirements.txt
+deploy:
+  provider: pypi
+  username: "__token__"
+  skip_existing: true
+  edge: true
+  on:
+    branch: main
