@@ -1,10 +1,7 @@
 language: python
-python:
-  #- "3.8"
+script: ls
 deploy:
   provider: pypi
   username: "__token__"
   skip_existing: true
   edge: true
-  on:
-    branch: master
